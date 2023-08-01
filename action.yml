@@ -1,5 +1,5 @@
-name: PyInstaller Action
-author: '@Martin005'
+name: Versatile PyInstaller
+author: '@sayyid5416'
 description: GitHub Action to package python scripts into executables
 branding: 
   icon: hard-drive
@@ -92,7 +92,8 @@ runs:
       run: |
         pyinstaller \
           --clean \
-          --distpath ${{ inputs.exe_path }} \
+          --noconfirm \
+          --dist ${{ inputs.exe_path }} \
           ${{ steps.mods.outputs.supported_options }} \
           "${{ inputs.spec }}"
         
