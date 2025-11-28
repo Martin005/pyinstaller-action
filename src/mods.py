@@ -42,6 +42,7 @@ pyOptions = [
 
     '--name <NAME>',                    '-n <NAME>',
     '--icon <FILEICON>',                '-i <FILEICON>',
+    '--splash <IMAGEFILE>',
 ]
 specOptions = [
     '--ascii',                          '-a',
